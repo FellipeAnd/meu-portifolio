@@ -1,19 +1,28 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
     margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #ffffff;
+    background: linear-gradient(-45deg, #1a001f, #000000, #2b0040, #0d001a);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
   }
   
-  header, footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
+  @keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
   }
   
   section {
+    max-width: 800px;
+    margin: 40px auto;
     padding: 20px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #6200ff;
   }
   
+  a {
+    color: #a974ff;
+    text-decoration: none;
+  }
